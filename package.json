@@ -6,7 +6,8 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "0.9.5"
+    "react-scripts": "^5.0.1",
+    "uglify-js": "github:mishoo/UglifyJS2#harmony"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,5 +18,17 @@
     "lint": "node ./scripts/eslint.js",
     "type:check": "node ./scripts/typecheck.js",
     "i18n:check": "node ./scripts/i18n-check.js"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
