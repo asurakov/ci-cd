@@ -6,6 +6,7 @@ const App = () => {
   const [state, setState] = useState(0)
 
   const increment = () => setState(prev => prev + 1)
+  const decrement = () => setState(prev => prev - 1)
 
   return (
     <div className="App">
@@ -13,12 +14,11 @@ const App = () => {
         <img src={logo} className="App-logo" alt="logo" />
         <h2>Welcome to React</h2>
       </div>
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
-      <hr/>
+      <p className="App-intro">Welcome to counter</p>
+      <hr />
       <h2>value = {state}</h2>
-      <button onClick={increment}>Increment</button>
+      <button className='myBtn' onClick={increment}>Increment</button>
+      <button className='myBtn' onClick={decrement}>Decrement</button>
     </div>
   );
 };
